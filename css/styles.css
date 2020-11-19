@@ -1,0 +1,131 @@
+
+:root{
+    --primary-dark:#2d3248;
+    --primary-light:#6a6f81;
+    --primary-background::#19a2ae;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Kumbh Sans',sans-serif;
+    background-color:#19a2ae;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position:top left , bottom right;
+    background-size:40%,40%;
+    background-repeat: no-repeat,no-repeat;
+    line-height: 1.1;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+    display:block;
+    margin: auto;
+    border: 5px solid #fff;
+    border-radius:50%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 0 10px rgb(0,0,0,0.15);
+    min-width:300px;
+    background-color: #fff;
+    border-radius:1.2rem;
+}
+
+.pattern{
+   border-radius:1.2rem 1.2rem 0 0;
+   min-width:340px;
+   padding: 4em;
+   background-image: url(images/bg-pattern-card.svg);
+   background-size: cover;
+}
+
+.image{
+    position: relative;
+    top:-50px;
+    /* background-color: red; */
+}
+.details{
+    /* background-color: #cece; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.name{
+    color:var(--primary-dark);
+    font-size:1.3rem;
+    margin: -20px 0 10px 0;
+}
+.age,.place{
+    color:var(--primary-light);
+    font-size:0.9rem;
+    font-weight:400;
+}
+
+
+.opinions{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:40px;
+    text-align: center;
+    padding: 1.5em;
+    border-radius:0 0 10px 10px;
+    border-top:1px solid #6a6f8175;
+}
+.opinions h2{
+    font-size:1.1rem;
+    color: var(--primary-dark);
+}
+.opinions p{
+    margin: 0.5em 0;
+    letter-spacing: 2px;
+    color: var(--primary-light);
+    font-size:0.7rem;
+}
+
+.attribution { 
+    margin: 2em 0;
+    font-size: 1.125rem; 
+    text-align: center;
+}
+.attribution a { 
+    color: #ffffff; 
+}
+
+/* Mobile media queries */
+ @media (max-width:375px){
+    /* .pattern{
+        padding: 2em;
+    } */
+    .pattern{
+        min-width:300px;
+        /* height: 360px; */
+    }
+    .opinions{
+        padding: 2em;
+    }
+    .opinions h2{
+        font-size:1rem;
+    }
+    .name{
+        font-size:1.1rem;
+    }
+} 
+
+/* Background svg queries */
+@media (max-width:840px){
+    body{
+        background-size: 65%,60%;
+        background-position: left right;
+    }
+}
