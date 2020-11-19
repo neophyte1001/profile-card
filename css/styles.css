@@ -17,7 +17,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-image: url(./img/bg-pattern-top.svg), url(./img/bg-pattern-bottom.svg);
     background-position:top left , bottom right;
     background-size:40%,40%;
     background-repeat: no-repeat,no-repeat;
