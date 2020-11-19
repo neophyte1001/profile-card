@@ -46,7 +46,7 @@ main{
    border-radius:1.2rem 1.2rem 0 0;
    min-width:340px;
    padding: 4em;
-   background-image: url(images/bg-pattern-card.svg);
+   background-image: url("../img/bg-pattern-card.svg");
    background-size: cover;
 }
 
